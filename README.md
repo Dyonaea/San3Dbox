@@ -11,9 +11,8 @@ et en programmation bas niveau tout en créant un univers amusant.
 - Compilateur C++17 ou supérieur (GCC, Clang ou MSVC)  
 - Git (pour cloner le dépôt)
 
-### Étapes d’installation et de compilation
+### Étapes d’installation
 
-Cloner le projet
 ```bash
 git clone https://github.com/<votre-utilisateur>/San3Dbox.git
 cd San3Dbox
