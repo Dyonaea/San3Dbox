@@ -7,13 +7,9 @@ et en programmation bas niveau tout en créant un univers amusant.
 
 ### Prérequis
 
-Avant de commencer, assurez-vous d’avoir installé les outils suivants :
-
 - CMake ≥ 3.10  
 - Compilateur C++17 ou supérieur (GCC, Clang ou MSVC)  
 - Git (pour cloner le dépôt)
-
----
 
 ### Étapes d’installation et de compilation
 
