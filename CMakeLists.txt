@@ -54,7 +54,9 @@ add_executable(${PROJECT_NAME} ${SRC_FILES})
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     include
-    ${asio_SOURCE_DIR}/asio/include
+    ${asio_SOURCE_DIR}/include
+    ${glad_SOURCE_DIR}/include
+    ${glad_BINARY_DIR}/include
 )
 
 # ─────────────────────────────────────────────
@@ -68,3 +70,8 @@ else()
     find_package(OpenGL REQUIRED)
     target_link_libraries(${PROJECT_NAME} PRIVATE OpenGL::GL pthread)
 endif()
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+#cmake -G "MinGW Makefiles" -B build
+#cmake --build build -- -j10

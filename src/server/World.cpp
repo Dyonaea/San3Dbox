@@ -11,7 +11,13 @@ World::World(){
     players.push_back(p2);
 }
 void World::run(){
+    i++;
+    if (i % 100 == 0){
+        std::cout<< i << " | " << i/100 << " | " << players.size() << std::endl;
+        players.push_back(new Player{i, glm::vec3(i/100, 0.0f, 0.0f)});
+    }
     players[0]->pos.x += 0.002;
+
 }
 void World::addPlayer(){
 

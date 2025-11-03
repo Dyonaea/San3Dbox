@@ -16,5 +16,6 @@ public:
     void remodePlayer();
     std::vector<struct Player*> players;
 private:
+int i = 0;
 
 };
